@@ -25,7 +25,7 @@ const urlencodedParser = urlencoded({ extended: false });
 app.use(urlencodedParser);
 app.use(json());
 app.use(raw());
-app.get("/index.html", (req, res) => {
+app.get("/testindex.html", (req, res) => {
   res.send(`
 <form action="/signup" method="POST" id="form">
 
